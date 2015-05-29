@@ -5,7 +5,10 @@
 //===== Description: =========================================
 //= Disguises you as various classes.
 //===== Additional Comments: =================================
+//= v1.1 - Bug Fixes
 //= v1.0 - Initial version
+//===== Obtained at: =========================================
+//= https://github.com/Ancyker/PublicScripts/blob/master/SingleFiles/class_setter.txt
 //============================================================
 prontera,158,163,4	script	Class Setter	615,{
 	mes "["+strnpcinfo(1)+"]";
@@ -95,14 +98,6 @@ function	script	applybase	{
 	case Job_Baby_Guard:
 		setoption 0x20;
 		break;
-	default:
-		break;
-	}
-	else switch (getarg(0,Class)) {
-	case Job_Ranger:
-	case Job_Ranger_T:
-	case Job_Baby_Ranger:
-		setoption 0x100000;
 	default:
 		break;
 	}
